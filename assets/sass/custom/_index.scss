@@ -1,0 +1,181 @@
+@import "variable.scss";
+body {
+    font-family: $font-pop;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+
+h1,h2,h3,h4,h5,h6,p,a,{
+    font-family: $font-mon;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+//Logo
+.navbar-light .navbar-brand {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    color: $h-color;
+}
+
+//Navbar-toggleer
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.bg-light {
+    background: #f5f5f5 !important;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0px;
+    margin: 10px;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        width: 0%;
+        height: 2px;
+        background: $text-color;
+        transition: all .5s ease;
+    }
+    &:hover {
+        color: #afafaf;
+        &:after {
+            width: 100%;
+            margin: 0 auto;
+            background: #afafaf;
+        }
+    }
+}
+
+//Header Area
+.jumbotron {
+    background: #f5f5f5;
+    border-radius: 0;
+    margin: 0px;
+    padding: 2em 0em 0em 0em;
+    figure {
+        margin: 0px;
+    }
+}
+
+.personal-info-inner {
+    padding-bottom: 2em;
+    h5 {
+        color: $sub-h-color;
+        letter-spacing: 1px;
+    }
+    h2 {
+        font-size: 4.4em;
+        font-weight: bold;
+        margin: 1rem 0rem;
+        color: $h-color;
+    }
+    p {
+        color: $text-color;
+        line-height:27px;
+        font-size: 1rem;
+    }
+}
+/*------------------------------------------*/
+
+.about{
+    padding:8em 0em;
+}
+
+.about-header{
+    @include section-header;
+}
+
+.about-details{
+    h4{
+        font-size:2.3em;
+        font-weight: bold;
+        text-transform: uppercase;
+        color:$h-color;
+    }
+    p{
+        color: $text-color;
+        line-height:27px;
+        font-size: 1rem;  
+        font-weight: 400;
+    }
+}
+
+/*--------------------------------------------------*/
+.skill-bar {
+    margin-top:3em;
+}
+
+
+.single-bar h6{
+    color:$text-color;
+    font-weight: bold;
+}
+
+.barfiller {
+    width:100%;
+    height:7px;
+    background:#c8c8c8;
+    border-radius: 50px;
+    position:relative;
+    margin: 1em 0em 2em 0em;
+
+  }
+
+  
+  .barfiller .fill {
+    display:block;
+    position:relative;
+    width:0px;
+    height:100%;
+    background:#484848;
+    z-index:1;
+    border-radius: 50px;
+  }
+  
+  .barfiller .tipWrap {
+    display:none;
+  }
+  
+  .barfiller .tip {
+    font-size:15px;
+    color:#a3a3a3;
+    font-weight: bold;
+    left:0px;
+    top:-30px;
+    position:absolute;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -6px;
+        border-radius: 50%;
+        top: 23px;
+        background: #484848;
+        display: block;
+        border: 5px solid #a3a3a3;
+    }
+  }
+  
+
+
+
+  /*------------------------------------------*/
+
+  
