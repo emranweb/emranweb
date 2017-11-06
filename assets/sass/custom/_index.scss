@@ -1,14 +1,22 @@
-@import "variable.scss";
+@import "variable";
 body {
     font-family: $font-pop;
     font-size: 10px;
     font-weight: lighter;
 }
 
-
-h1,h2,h3,h4,h5,h6,p,a,{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+{
     font-family: $font-mon;
 }
+
 
 /*-----------------------------------------------------------------------------*/
 
@@ -28,12 +36,9 @@ h1,h2,h3,h4,h5,h6,p,a,{
     background: #f5f5f5 !important;
 }
 
-
 button:focus {
     outline: none;
 }
-
-
 
 .navbar-light .navbar-nav .nav-link {
     font-size: 1.5em;
@@ -87,79 +92,80 @@ button:focus {
     }
     p {
         color: $text-color;
-        line-height:27px;
+        line-height: 27px;
         font-size: 1rem;
     }
 }
+
+
 /*------------------------------------------*/
 
-.about{
-    padding:8em 0em;
+.about {
+    padding: 8em 0em;
 }
 
-.about-header{
+.about-header {
     @include section-header;
 }
 
-.about-details{
-    h4{
-        font-size:2.3em;
+.about-details {
+    h4 {
+        font-size: 2.3em;
         font-weight: bold;
         text-transform: uppercase;
-        color:$h-color;
+        color: $h-color;
     }
-    p{
+    p {
         color: $text-color;
-        line-height:27px;
-        font-size: 1rem;  
+        line-height: 27px;
+        font-size: 1rem;
         font-weight: 400;
     }
 }
 
+
 /*--------------------------------------------------*/
+
 .skill-bar {
-    margin-top:3em;
+    margin-top: 3em;
 }
 
-
-.single-bar h6{
-    color:$text-color;
+.single-bar h6 {
+    color: $text-color;
     font-weight: bold;
 }
 
 .barfiller {
-    width:100%;
-    height:7px;
-    background:#c8c8c8;
+    width: 100%;
+    height: 7px;
+    background: #c8c8c8;
     border-radius: 50px;
-    position:relative;
+    position: relative;
     margin: 1em 0em 2em 0em;
+}
 
-  }
-
-  
-  .barfiller .fill {
-    display:block;
-    position:relative;
-    width:0px;
-    height:100%;
-    background:#484848;
-    z-index:1;
+.barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: #484848;
+    z-index: 1;
     border-radius: 50px;
-  }
-  
-  .barfiller .tipWrap {
-    display:none;
-  }
-  
-  .barfiller .tip {
-    font-size:15px;
-    color:#a3a3a3;
+}
+
+.barfiller .tipWrap {
+    display: none;
+}
+
+.barfiller .tip {
+    font-size: 15px;
+    color: #a3a3a3;
     font-weight: bold;
-    left:0px;
-    top:-30px;
-    position:absolute;
-    &:after{
+    left: 0px;
+    top: -30px;
+    position: absolute;
+    &:after {
         content: "";
         position: absolute;
         width: 20px;
@@ -171,11 +177,126 @@ button:focus {
         display: block;
         border: 5px solid #a3a3a3;
     }
-  }
-  
+}
 
 
+/*------------------------------------------*/
 
-  /*------------------------------------------*/
+.experience {
+    background: $sec-bg-color;
+    padding: 8em 0em;
+}
 
-  
+.experience-header {
+    @include section-header;
+}
+
+.single-experience {
+    display: flex;
+    justify-content: space-around;
+}
+
+.single-experience-left {
+    h4 {
+        font-size: 1.5em;
+        margin-right: 1rem;
+        color: $text-color;
+        font-weight: bold;
+        width: 100px;
+        span {
+            font-size: 11px;
+        }
+    }
+}
+
+.single-experience-right {
+    padding-left: 20px;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        left: -1px;
+        top: 23px;
+        height: 80%;
+        border-left: 3px dotted #000;
+    }
+    h3 {
+        font-size: 2em;
+        font-weight: 500;
+        line-height: 1.7rem;
+        position: relative;
+        font-weight: bold;
+        color: $h-color;
+        &:before {
+            content: "\f058";
+            position: absolute;
+            font-family: FontAwesome;
+            left: -28px;
+            font-size: 25px;
+            z-index: 1;
+        }
+    }
+    p {
+        font-size: 1.5em;
+    }
+}
+
+
+/*------------------------------------------------*/
+
+.portfolio {
+    padding: 8em 0em;
+}
+
+.portfolio-header {
+    @include section-header;
+}
+
+
+/*----------------------------------------------*/
+
+.service {
+    padding: 8em 0em;
+    background: $sec-bg-color;
+}
+
+.service-header {
+    @include section-header;
+}
+
+.single-service {
+    padding: 5em 2em;
+    box-shadow: 0 3px 20px rgba(5, 5, 6, 0.10);
+    margin-bottom:2em;
+    &:hover {
+        i {
+            background: $h-color;
+            color: #fff;
+        }
+    }
+    span {
+        i {
+            width: 2em;
+            height: 2em;
+            line-height: 2em;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #a9a9a9;
+            font-size: 2em;
+            border-radius: 50%;
+            transition: all .5s ease;
+        }
+    }
+    h4 {
+        font-size: 1.8em;
+        color: $h-color;
+        margin-top: 1.4rem;
+    }
+    p {
+        font-size: 1.5em;
+    }
+}
+
+
+/*--------------------------------*/
