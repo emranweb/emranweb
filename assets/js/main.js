@@ -18,23 +18,21 @@ $(document).ready(function () {
   });
 
   //---------------------------
-  // init Isotope
+
   $('.grid').isotope({
-    layoutMode: 'fitRows',
     itemSelector: '.grid-item',
     percentPosition: true,
     masonry: {
-      columnWidth: '.grid-sizer',
+      // use outer width of grid-sizer for columnWidth
+      columnWidth: '.grid-sizer'
     }
   });
-  // filter items on button click
-  $('.filter-button-group').on('click', 'button', function () {
-    var filterValue = $(this).attr('data-filter');
-    $('.grid').isotope({
-      filter: filterValue
-    });
-  });
 
+  // filter items on button click
+  $('.filter-button-group').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $('.grid').isotope({ filter: filterValue });
+  });
 
 
 

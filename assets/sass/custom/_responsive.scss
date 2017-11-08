@@ -1,4 +1,16 @@
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    .grid-sizer, .grid-item{
+        width:50%;
+        padding:10px;
+        margin-bottom:10px;
+        vertical-align: center;
+        border-radius: 10px;
+        img{
+            border-radius: 3px;
+        }
+    }
+}
+
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -11,6 +23,8 @@
     .personal-info-inner p {
         margin: 1em 0em 2em 0em;
     }
+   
+
 }
 
 // Large devices (desktops, 992px and up)
@@ -23,6 +37,16 @@
     }
     .personal-info-inner p {
         margin: 1em 0em 3em 0em;
+    }
+
+    .grid-sizer, .grid-item{
+        width:33.33%;
+        padding:10px;
+        vertical-align: center;
+        border-radius: 10px;
+        img{
+            border-radius: 3px;
+        }
     }
 }
 
