@@ -1,3 +1,5 @@
+// Small Device
+
 @media (min-width: 576px) {
     .grid-sizer, .grid-item{
         width:50%;
@@ -12,31 +14,28 @@
 }
 
 
+
+
+
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .m-top-9 {
-        margin-top: 10em !important;
+    .header-left{
+     margin-top:10em;
     }
-    .personal-info-inner h2 {
+
+    .header-left_title{
         font-size: 60px;
     }
-    .personal-info-inner p {
-        margin: 1em 0em 2em 0em;
-    }
-   
-
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    .m-top-27 {
-        margin-top: 20em !important;
+    .header-left {
+        margin-top: 20em;
     }
-    .personal-info-inner h2 {
+    .header-left_title {
         font-size: 80px;
-    }
-    .personal-info-inner p {
-        margin: 1em 0em 3em 0em;
     }
 
     .grid-sizer, .grid-item{

@@ -16,13 +16,14 @@
   <!-- Style Link -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
   <div id="wrapper">
     <!-- Header Top Nav -->
-    <section class="navbar navbar-expand-md navbar-light bg-light">
+    <section class="navbar navbar-expand-md navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Emranweb</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcon" aria-controls="navbarSupportedContent"
@@ -57,21 +58,23 @@
     <!-- End Header Top Nav -->
 
     <!-- Header Hero Section -->
-    <header class="jumbotron personal-info">
+    <header class="jumbotron header">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 mt-sm-3 m-top-9 m-top-27 text-left">
-            <div class="personal-info-inner">
-              <h5>HELLO, MY NAME IS</h5>
-              <h2>Emran</h2>
-              <p class="text">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled demord by</p>
-              <a href="#" class="button">My Work</a>
+          <!-- Header left Area -->
+          <div class="col-sm-6 mt-sm-3 text-left">
+            <div class="header-left wow zoomInLeft">
+              <h5 class="header-left_sub-title">HELLO, MY NAME IS</h5>
+              <h1 class="header-left_title">Emran</h1>
+              <p class="text header-left_text">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled demord by</p>
+              <a href="#" class="button header-btn">My Work</a>
             </div>
           </div>
+          <!-- Header Right Area -->
           <div class="col-md-6 col-sm-6 text-right">
-            <figure>
-              <img src="assets/image/my-photo.png" alt="My Photo" class="img-fluid">
-            </figure>
+            <div class="header-right wow zoomInRight">
+              <img src="assets/image/my-photo.png" alt="emranweb profile photo" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
@@ -84,7 +87,7 @@
         <div class="row text-center">
           <div class="col">
             <div class="about-header">
-              <h2>ABOUT ME</h2>
+              <h1>ABOUT ME</h1>
             </div>
           </div>
         </div>
@@ -149,7 +152,7 @@
         <div class="row text-center">
           <div class="col">
             <div class="experience-header">
-              <h2>My Experience</h2>
+              <h1>My Experience</h1>
             </div>
           </div>
         </div>
@@ -219,7 +222,7 @@
         <div class="row">
           <div class="col text-center">
             <div class="portfolio-header">
-              <h2>MY PORTFOLIO</h2>
+              <h1>MY PORTFOLIO</h1>
             </div>
           </div>
         </div>
@@ -245,15 +248,15 @@
               <div class="grid-item a b">
                 <img class="img-fluid" src="http://placehold.it/600x300" alt="image">
               </div>
-               <div class="grid-item a c ">
+              <div class="grid-item a c ">
                 <img class="img-fluid" src="http://placehold.it/600x650" alt="image">
               </div>
               <div class="grid-item c b">
                 <img class="img-fluid" src="http://placehold.it/600x300" alt="image">
               </div>
               <div class="grid-item a">
-                  <img class="img-fluid" src="http://placehold.it/600x300" alt="image">
-                </div>
+                <img class="img-fluid" src="http://placehold.it/600x300" alt="image">
+              </div>
 
             </div>
           </div>
@@ -268,7 +271,7 @@
         <div class="row text-center">
           <div class="col">
             <div class="service-header">
-              <h2>MY SERVICES</h2>
+              <h1>MY SERVICES</h1>
             </div>
           </div>
         </div>
@@ -320,7 +323,7 @@
         <div class="row text-center">
           <div class="col">
             <div class="testimonial-header">
-              <h2>TESTIMONIAL</h2>
+              <h1>TESTIMONIAL</h1>
             </div>
           </div>
         </div>
@@ -380,7 +383,7 @@
         <div class="row text-center">
           <div class="col">
             <div class="blog-header">
-              <h2>BLOG</h2>
+              <h1>BLOG</h1>
             </div>
           </div>
         </div>
@@ -574,10 +577,10 @@
   <script src='assets/js/jquery-3.2.1.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-
   <script src='https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js'></script>
   <script src="assets/js/barfilter.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
