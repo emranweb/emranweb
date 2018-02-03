@@ -47,9 +47,18 @@ a:hover {
     transition: all .3s;
 }
 
+.navbar-light{
+    background-color:$sec-bg-color;
+}
+
 //scroll bg change
 .bg-change {
-    background: #e8e4e4;
+    background: #e6e6e6 ;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right: 0px;
+    z-index: 1020;
 }
 
 //Logo
@@ -78,7 +87,7 @@ button:focus {
     &:after {
         content: "";
         position: absolute;
-        top: 10px;
+        top: 11px;
         left: 0px;
         width: 0%;
         height: 2px;
@@ -99,7 +108,7 @@ button:focus {
 /*-------------------------------------------------------------------------------*/
 
 .header {
-    background: #f5f5f5;
+    background: $sec-bg-color;
     border-radius: 0;
     margin: 0px;
     padding-top: 7em;
