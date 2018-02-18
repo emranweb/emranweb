@@ -9,6 +9,7 @@ body {
     font-family: $font-pop;
     font-size: 10px;
     font-weight: lighter;
+    position: relative;
 }
 
 //Globaal
@@ -18,7 +19,7 @@ h3,
 h4,
 h5,
 h6,
-{
+    {
     font-family: $font-mon;
     color: $h-color;
 }
@@ -39,7 +40,6 @@ a:hover {
     text-decoration: none;
 }
 
-
 /*-----------------------------------------------------------------------------*/
 
 //navbar
@@ -47,16 +47,16 @@ a:hover {
     transition: all .3s;
 }
 
-.navbar-light{
-    background-color:$sec-bg-color;
+.navbar-light {
+    background-color: $sec-bg-color;
 }
 
 //scroll bg change
 .bg-change {
-    background: #e6e6e6 ;
+    background: #e6e6e6;
     position: fixed;
-    top:0px;
-    left:0px;
+    top: 0px;
+    left: 0px;
     right: 0px;
     z-index: 1020;
 }
@@ -84,26 +84,21 @@ button:focus {
     position: relative;
     padding: 0px;
     margin: 10px;
-    &:after {
-        content: "";
-        position: absolute;
-        top: 11px;
-        left: 0px;
-        width: 0%;
-        height: 2px;
-        background: $text-color;
-        transition: all .5s ease;
-    }
-    &:hover {
-        color: #afafaf;
-        &:after {
-            width: 100%;
-            margin: 0 auto;
-            background: #afafaf;
-        }
-    }
+    display: inline-block; 
 }
 
+.navbar-light .navbar-nav .nav-link.active {
+    color: $text-color;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: $btn-color;
+        left: 0px;
+        top: 10px;
+    }
+}
 
 /*-------------------------------------------------------------------------------*/
 
@@ -131,7 +126,6 @@ button:focus {
     display: inline-block;
 }
 
-
 /*------------------------------------------*/
 
 .about {
@@ -152,7 +146,6 @@ button:focus {
         font-weight: 400;
     }
 }
-
 
 /*--------------------------------------------------*/
 
@@ -207,7 +200,6 @@ button:focus {
         border: 5px solid #a3a3a3;
     }
 }
-
 
 /*------------------------------------------*/
 
@@ -267,7 +259,6 @@ button:focus {
     }
 }
 
-
 /*------------------------------------------------*/
 
 .portfolio {
@@ -320,7 +311,6 @@ button:focus {
     }
 }
 
-
 /*----------------------------------------------*/
 
 .service {
@@ -364,9 +354,7 @@ button:focus {
     }
 }
 
-
 /*--------------------------------*/
-
 
 /*--------------------------------------*/
 
@@ -415,7 +403,6 @@ button:focus {
 .carousel-indicators .active {
     background-color: $h-color;
 }
-
 
 /*------------------------------------*/
 
@@ -500,7 +487,6 @@ button:focus {
         }
     }
 }
-
 
 /*-------------------------------------*/
 
@@ -590,7 +576,6 @@ button:focus {
         }
     }
 }
-
 
 /*-----------------------------------------------------------*/
 

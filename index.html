@@ -20,10 +20,9 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
-  <div id="wrapper">
+<body data-spy="scroll" data-target="#navScrollSpy">
     <!-- Header Top Nav -->
-    <section class="navbar navbar-expand-md navbar-light">
+    <section class="navbar navbar-expand-md navbar-light" id="navScrollSpy">
       <div class="container">
         <a class="navbar-brand" href="#">Emranweb</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcon" aria-controls="navbarSupportedContent"
@@ -34,22 +33,22 @@
         <div class="collapse navbar-collapse" id="navcon">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link" href="#header-top">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#section-2">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PORTFOLIO</a>
+              <a class="nav-link" href="#section-3">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SERVICES</a>
+              <a class="nav-link" href="#section-4">SERVICES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">BLOG</a>
+              <a class="nav-link" href="#section-5">BLOG</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="#section-6">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -58,7 +57,7 @@
     <!-- End Header Top Nav -->
 
     <!-- Header Hero Section -->
-    <header class="jumbotron header">
+    <header class="jumbotron header" id="header-top">
       <div class="container">
         <div class="row">
           <!-- Header left Area -->
@@ -82,7 +81,7 @@
     <!-- End header Area -->
 
     <!-- About Area -->
-    <section class="about p-ud">
+    <section class="about p-ud" id="section-2">
       <div class="container">
         <div class="row text-center">
           <div class="col">
@@ -217,7 +216,7 @@
     <!-- End Experience Area -->
 
     <!-- Portfolio Area -->
-    <section class="portfolio p-ud">
+    <section class="portfolio p-ud" id="section-3">
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -266,7 +265,7 @@
     <!-- End Portfolio Area -->
 
     <!-- Servive Area -->
-    <section class="service p-ud">
+    <section class="service p-ud" id="section-4">
       <div class="container">
         <div class="row text-center">
           <div class="col">
@@ -378,7 +377,7 @@
     <!-- End Testimonial Area -->
 
     <!-- Blog Area -->
-    <section class="blog p-ud">
+    <section class="blog p-ud" id="section-5">
       <div class="container">
         <div class="row text-center">
           <div class="col">
@@ -471,7 +470,7 @@
     <!-- End Blog Area-->
 
     <!-- Contact Area -->
-    <section class="contact p-ud">
+    <section class="contact p-ud" id="section-6">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -534,7 +533,7 @@
     <!-- End Contact Form -->
 
     <!-- Footer Area -->
-    <footer class="">
+    <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-6 text-center">
@@ -573,7 +572,6 @@
     </footer>
     <!-- End Footer Area -->
 
-  </div>
   <script src='assets/js/jquery-3.2.1.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
