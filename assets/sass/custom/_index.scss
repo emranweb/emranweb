@@ -5,6 +5,7 @@
 }
 
 @import "variable";
+
 body {
     font-family: $font-pop;
     font-size: 10px;
@@ -39,13 +40,13 @@ a:hover {
     color: #fff;
     text-decoration: none;
 }
+button:focus {
+    outline: none;
+}
 
 /*-----------------------------------------------------------------------------*/
 
 //navbar
-.navbar {
-    transition: all .3s;
-}
 
 .navbar-light {
     background-color: $sec-bg-color;
@@ -58,7 +59,7 @@ a:hover {
     top: 0px;
     left: 0px;
     right: 0px;
-    z-index: 1020;
+    z-index: 1;
 }
 
 //Logo
@@ -73,9 +74,7 @@ a:hover {
     border: none;
 }
 
-button:focus {
-    outline: none;
-}
+
 
 .navbar-light .navbar-nav .nav-link {
     font-size: 1.5em;
