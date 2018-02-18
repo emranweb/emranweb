@@ -58,7 +58,7 @@ button:focus {
   top: 0px;
   left: 0px;
   right: 0px;
-  z-index: 1; }
+  z-index: 999; }
 
 .navbar-light .navbar-brand {
   font-size: 3em;
