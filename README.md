@@ -1,13 +1,9 @@
 <h1 align="center">Hi 👋, I'm Al Emran</h1>
 <h3 align="center">A passionate frontend developer from Bangladesh</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=emranweb&label=Profile%20views&color=0e75b6&style=flat" alt="emranweb" /> </p>
+- 🔭 I’m currently working at **JoomShaper**
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=emranweb" alt="emranweb" /></a> </p>
-
-- 🔭 I’m currently working on **JoomShaper**
-
-- 🌱 I’m currently learning **Javascript,React,Node,PHP**
+- 🌱 I’m currently learning **JavaScript,React,Node,PHP**
 
 - 📫 How to reach me **emranbd77@gmail.com**
 
