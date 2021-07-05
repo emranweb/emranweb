@@ -4,8 +4,8 @@
 
 - 🔭 I’m currently working at **JoomShaper**
 
-- 🌱 I’m currently learning **JavaScript,React,Node,PHP**
+- 🌱 I’m currently learning **JavaScript,React,Node**
 
 - 📫 How to reach me **emranbd77@gmail.com**
 
-- ⚡ Fun fact **I love to travel**
+
