@@ -2,10 +2,8 @@
 <h3 align="center">Frontend Developer</h3>
 <br />
 
-- 🔭 I’m currently working at **JoomShaper**
+-   🔭 I’m currently working at **JoomShaper**
 
-- 🌱 I’m currently learning **JavaScript,React,Node**
+-   💼 Skills: **JavaScript, Reactjs, Next.js, TypeScript, HTML, CSS**
 
-- 📫 How to reach me **emranbd77@gmail.com**
-
-
+-   📫 How to reach me: **emranbd77@gmail.com**
